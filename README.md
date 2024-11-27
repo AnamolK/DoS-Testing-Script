@@ -36,7 +36,7 @@ A robust and feature-rich **Asynchronous Stress Testing Tool** for evaluating we
 
 Ensure Python 3.7+ is installed. Install required libraries with:
 
-```bash
+````bash
 pip install aiohttp tenacity
 
 ### Step 2: Using the Program
@@ -59,3 +59,4 @@ python stress_test.py https://example.com -t 100 -r 100
 | `--log-file`       | Path to the log file.                         | `stress_test.log`|
 | `--config`         | Path to a JSON configuration file.            | `None`           |
 ```bash
+````
