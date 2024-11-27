@@ -41,20 +41,20 @@ pip install aiohttp tenacity
 
 ### Step 2: Using the Program
 
+Run the program with the following command:
 
 ```bash
-python stress_test.py https://example.com -t 100 -r 100 (threads and reequests)
+python stress_test.py https://example.com -t 100 -r 100
 
-###
-Command-Line Options:
-Option	        Description 	         Default
--t, --threads	Number of concurrent connections.	100
--r, --requests	Number of requests per thread.	1000
---timeout	Request timeout in seconds.	5
---method	HTTP method to use (GET or POST).	GET
---data	Data payload for POST requests (as a string).	""
---proxies	List of proxies (http://proxy:port) to use for requests.	[]
---validate-proxies	Validate proxies before testing.	False
---log-file	Path to the log file.	stress_test.log
---config	Path to a JSON configuration file containing test parameters.	None
+| Option             | Description                                   | Default          |
+|--------------------|-----------------------------------------------|------------------|
+| `-t`, `--threads`  | Number of concurrent connections.             | `100`            |
+| `-r`, `--requests` | Number of requests per thread.                | `1000`           |
+| `--timeout`        | Request timeout in seconds.                   | `5`              |
+| `--method`         | HTTP method to use (`GET` or `POST`).         | `GET`            |
+| `--data`           | Data payload for POST requests (as a string). | `""`             |
+| `--proxies`        | List of proxies (`http://proxy:port`) to use. | `[]`             |
+| `--validate-proxies`| Validate proxies before testing.             | `False`          |
+| `--log-file`       | Path to the log file.                         | `stress_test.log`|
+| `--config`         | Path to a JSON configuration file.            | `None`           |
 
