@@ -38,14 +38,15 @@ Ensure Python 3.7+ is installed. Install required libraries with:
 
 ```bash
 pip install aiohttp tenacity
-
+```bash
 ### Step 2: Using the Program
 
 Run the program with the following command:
 
 ```bash
 python stress_test.py https://example.com -t 100 -r 100
-
+```bash
+```bash
 | Option             | Description                                   | Default          |
 |--------------------|-----------------------------------------------|------------------|
 | `-t`, `--threads`  | Number of concurrent connections.             | `100`            |
@@ -57,4 +58,4 @@ python stress_test.py https://example.com -t 100 -r 100
 | `--validate-proxies`| Validate proxies before testing.             | `False`          |
 | `--log-file`       | Path to the log file.                         | `stress_test.log`|
 | `--config`         | Path to a JSON configuration file.            | `None`           |
-
+```bash
